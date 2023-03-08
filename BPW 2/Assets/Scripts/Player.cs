@@ -195,7 +195,7 @@ public class Player : MonoBehaviour
 
         attackBox.enabled = true;
         canAttack = false;
-        rb.velocity = gameObject.transform.forward * speed;
+        rb.velocity = gameObject.transform.forward * (speed/ 2);
         anim.SetBool("attacking", true);
         yield return new WaitForSecondsRealtime(0.3f);      
 
